@@ -1,0 +1,19 @@
+$header1: 2.5rem;
+$header2: 2rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.4rem;
+$text: 2rem;
+$gradient: linear-gradient(to right, rgb(102, 102, 102), rgb(179, 179, 179));
+$bacground-color: #1ba1ad;
+$gray-text: #7e7d82;
+$light-gray: #c7c7c7;
+
+@mixin flex($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+@import "global";
+@import "main-page";

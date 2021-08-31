@@ -1,0 +1,120 @@
+.landing-page {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 45rem;
+	width: 40rem;
+	background-color: white;
+	text-align: center;
+	border-radius: 2rem;
+	overflow: hidden;
+	margin: 2rem;
+	transition: 0.2s ease;
+}
+.card:hover {
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.671);
+	transform: scale(101%);
+}
+#bg {
+	width: 100%;
+}
+.info {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	transform: translateX(-50%);
+}
+#age {
+	font-weight: 400;
+}
+#profile-picture {
+	border-radius: 50%;
+	border: 10px solid white;
+	margin-bottom: 2rem;
+}
+.name-age {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#age {
+	padding: 1rem;
+}
+#name {
+	font-weight: 600;
+}
+.stats {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 10rem;
+	background: rgb(255, 255, 255);
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px solid rgb(206, 206, 206);
+	bottom: 0;
+}
+.stats div {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.bubble {
+	position: absolute;
+	z-index: -1;
+}
+.bubble-top {
+	bottom: 50%;
+	left: 0%;
+}
+.bubble-bottom {
+	top: 50%;
+	right: 0%;
+}
+
+@media screen and (max-width: 1600px) {
+	.bubble-top {
+		left: -15%;
+	}
+	.bubble-bottom {
+		right: -15%;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.bubble-top {
+		left: -30%;
+	}
+	.bubble-bottom {
+		right: -30%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.bubble-top {
+		left: -45%;
+	}
+	.bubble-bottom {
+		right: -45%;
+	}
+	#name,
+	#age {
+		font-size: 16px;
+	}
+	#city {
+		font-size: 12px;
+	}
+	#bg {
+		height: 40%;
+	}
+}
